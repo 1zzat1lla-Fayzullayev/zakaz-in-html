@@ -8665,10 +8665,6 @@ html:has(.drawer-open.drawer-open){
   margin-left: 30px;
 }
 
-.ml-\[60px\]{
-  margin-left: 60px;
-}
-
 .mr-24{
   margin-right: 6rem;
 }
@@ -8743,6 +8739,10 @@ html:has(.drawer-open.drawer-open){
 
 .mt-\[80px\]{
   margin-top: 80px;
+}
+
+.ml-\[50px\]{
+  margin-left: 50px;
 }
 
 .box-border{
@@ -8925,6 +8925,10 @@ html:has(.drawer-open.drawer-open){
 }
 
 .w-full{
+  width: 100%;
+}
+
+.w-\[100\%\]{
   width: 100%;
 }
 
@@ -10132,6 +10136,10 @@ html:has(.drawer-open.drawer-open){
   padding: 50px;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -10958,6 +10966,10 @@ input::-webkit-inner-spin-button {
     width: 450px;
   }
 
+  .md\:w-\[60\%\]{
+    width: 60%;
+  }
+
   .md\:flex-row{
     flex-direction: row;
   }
@@ -10985,6 +10997,10 @@ input::-webkit-inner-spin-button {
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-\[35px\]{
+    font-size: 35px;
   }
 }
 

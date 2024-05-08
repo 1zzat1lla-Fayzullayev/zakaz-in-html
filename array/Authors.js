@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <img src="${author.img}" alt="user" />
                         <p class="text-[#0B132A] text-[18px] font-normal">${author.name}</p>
                     </div>
-                    <p class="mt-[20px] text-[#0B132A] text-[16px]">${author.description}</p>
+                    <p class="mt-[20px] text-[#0B132A] text-[16px] p-3">${author.description}</p>
                 </div>
             </div>
         `
