@@ -48,10 +48,9 @@ async function handleSubmit() {
 document.addEventListener('DOMContentLoaded', function () {
 	const hamburger = document.getElementById('hamburger')
 	const modal = document.getElementById('modal')
-	const mobileNavbar = document.getElementById('mobile-navbar')
 	const close = document.getElementById('close')
 
 	hamburger.addEventListener('click', handleShowNav)
 	modal.addEventListener('click', handleCloseModal)
-	close.addEventListener('click', handleCloseNav)
+	// close.addEventListener('click', handleCloseNav)
 })
