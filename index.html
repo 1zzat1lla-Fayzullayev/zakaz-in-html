@@ -85,34 +85,22 @@
 			</div>
 		</div>
 
-		<!-- Add Mobile Navbar HTML if needed -->
-		<div id="mobile-navbar" class="hidden">
-			<ul
-				class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed"
-			>
-				<img
-					src="./assets/close.png"
-					alt="close"
-					class="w-[40px] fixed right-4 top-5"
-					onclick="handleShowNav()"
-				/>
+		 <!-- Add Mobile Navbar HTML if needed -->
+		 <div id="mobile-navbar" class="hidden">
+			<ul class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed">
+				<img src="./assets/close.png" alt="close" class="w-[40px] fixed right-4 top-5" id="close" onclick="handleCloseNav()" />
 				<li>
-					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">
-						About
-					</a>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">About</a>
 				</li>
 				<li>
-					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">
-						Pricing
-					</a>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">Pricing</a>
 				</li>
 				<li>
-					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">
-						Authors
-					</a>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">Authors</a>
 				</li>
 			</ul>
 		</div>
+		
 		<!-- / Navbar -->
 
 		<!-- Wrapper -->
@@ -397,7 +385,7 @@
                 <h1 class='text-[#0B132A] text-[35px]'>Get started</h1>
                 <p class='text-[#4F5665] text-[16px] mt-[20px]'>Receive your essay quickly and efficiently!</p>
             </div>
-            <button class='bg-[#2BC6F6] rounded-[10px] w-[200px] md:w-[250px] h-[60px] text-white mt-[37px] transition ease-in hover:shadow-lg hover:shadow-[#2BC6F6]'>Get started</button>
+            <button class='bg-[#2BC6F6] rounded-[10px] w-[200px] md:w-[250px] h-[60px] text-white mt-[37px] transition ease-in hover:shadow-lg hover:shadow-[#2BC6F6]' onclick="handleOpenModal()">Get started</button>
         </div>
     </div>
     <!-- End Get Start -->

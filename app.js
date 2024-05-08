@@ -16,6 +16,10 @@ const handleShowNav = () => {
 	document.body.classList.toggle('overflow-hidden')
 }
 
+const handleCloseNav = () => {
+	document.body.classList.remove('overflow-hidden')
+}
+
 async function handleSubmit() {
 	const username = document.querySelector('input[name="username"]').value
 	const messanger = document.querySelector('input[name="Messanger"]').value
@@ -43,8 +47,10 @@ document.addEventListener('DOMContentLoaded', function () {
 	const hamburger = document.getElementById('hamburger')
 	const modal = document.getElementById('modal')
 	const mobileNavbar = document.getElementById('mobile-navbar')
+	const close = document.getElementById('close')
 
 	hamburger.addEventListener('click', handleShowNav)
 	modal.addEventListener('click', handleCloseModal)
 	mobileNavbar.addEventListener('click', handleShowNav)
+	close.addEventListener('click', handleCloseNav)
 })
