@@ -4,13 +4,12 @@ const handleOpenModal = () => {
 }
 
 const handleCloseModal = event => {
-	const modal = document.getElementById('modal')
-	if (event && event.target.classList.contains('bg-gray-900')) {
-		modal.classList.add('hidden')
-	} else {
-		modal.classList.add('hidden')
-	}
-}
+    const modal = document.getElementById('modal');
+    if (!event || event.target.id === 'modal') {
+        modal.classList.add('hidden');
+    }
+};
+
 
 const handleShowNav = () => {
 	const mobileNavbar = document.getElementById('mobile-navbar')
@@ -54,5 +53,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	hamburger.addEventListener('click', handleShowNav)
 	modal.addEventListener('click', handleCloseModal)
-	// close.addEventListener('click', handleCloseNav)
+	close.addEventListener('click', handleCloseModal)
 })
