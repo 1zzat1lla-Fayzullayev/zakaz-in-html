@@ -5,7 +5,9 @@ const handleOpenModal = () => {
 
 const handleCloseModal = event => {
 	const modal = document.getElementById('modal')
-	if (event.target.classList.contains('bg-gray-900')) {
+	if (event && event.target.classList.contains('bg-gray-900')) {
+		modal.classList.add('hidden')
+	} else {
 		modal.classList.add('hidden')
 	}
 }
