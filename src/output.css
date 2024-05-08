@@ -8570,6 +8570,10 @@ html:has(.drawer-open.drawer-open){
   top: 1.25rem;
 }
 
+.top-2{
+  top: 0.5rem;
+}
+
 .isolate{
   isolation: isolate;
 }

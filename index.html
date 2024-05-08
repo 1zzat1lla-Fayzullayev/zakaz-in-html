@@ -9,7 +9,6 @@
 		<script src="./app.js" defer></script>
 		<script src="./array/PapperPrice.js" defer></script>
 		<script src="./array/Authors.js" defer></script>
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	</head>
 	<body>
 		<!-- Navbar -->
@@ -45,43 +44,6 @@
 					class="w-10"
 					id="hamburger"
 				/>
-			</div>
-		</div>
-
-		<!-- Add Modal HTML if needed -->
-
-		<div id="modal" class="hidden">
-			<div
-				class="fixed z-10 top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50"
-				onclick="handleCloseModal(event)"
-			>
-				<div
-					class="bg-white rounded-lg p-8 md:w-[450px] w-full mx-[20px] md:mx-0"
-				>
-					<h2 class="text-[30px] text-center font-bold mb-4 text-[#0B132A]">
-						Form
-					</h2>
-					<div class="flex flex-col gap-3">
-						<input
-							type="text"
-							name="username"
-							class="input input-info"
-							placeholder="Your name"
-						/>
-						<input
-							type="text"
-							name="Messanger"
-							class="input input-info"
-							placeholder="Messanger..."
-						/>
-					</div>
-					<button
-						class="bg-[#2BC6F6] text-white w-full rounded-[10px] h-[40px] mt-[30px]"
-						onclick="handleSubmit()"
-					>
-						Submit
-					</button>
-				</div>
 			</div>
 		</div>
 
@@ -137,13 +99,15 @@
 			</div>
 			<!-- Modal -->
 			<div id="modal" class="hidden">
+
 				<div
 					class="fixed z-10 top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50"
 					onclick="handleCloseModal(event)"
-				>
+				>	
 					<div
 						class="bg-white rounded-lg p-8 md:w-[450px] w-full mx-[20px] md:mx-0"
 					>
+
 						<h2 class="text-[30px] text-center font-bold mb-4 text-[#0B132A]">
 							Form
 						</h2>
@@ -158,15 +122,18 @@
 								type="text"
 								name="Messanger"
 								class="input input-info"
-								placeholder="Messanger..."
+								placeholder="Messanger"
 							/>
 						</div>
-						<button
-							class="bg-[#2BC6F6] text-white w-full rounded-[10px] h-[40px] mt-[30px]"
-							onclick="handleSubmit()"
-						>
-							Submit
-						</button>
+						<div class="flex items-center">
+							<button
+								class="bg-[#2BC6F6] text-white w-full rounded-[10px] h-[40px] mt-[30px]"
+								onclick="handleSubmit()"
+							>
+								Submit
+							</button>
+							<button class="bg-red-500 w-full rounded-[10px] h-[40px] mt-[30px]" onclick="handleCloseModal()">Close</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -425,5 +392,8 @@
 			</ul>
 		</div>
 	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	</body>
 </html>

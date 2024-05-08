@@ -17,6 +17,8 @@ const handleShowNav = () => {
 }
 
 const handleCloseNav = () => {
+	const mobileNavbar = document.getElementById('mobile-navbar')
+	mobileNavbar.classList.add('hidden')
 	document.body.classList.remove('overflow-hidden')
 }
 
@@ -51,6 +53,5 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	hamburger.addEventListener('click', handleShowNav)
 	modal.addEventListener('click', handleCloseModal)
-	mobileNavbar.addEventListener('click', handleShowNav)
 	close.addEventListener('click', handleCloseNav)
 })
