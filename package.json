@@ -1,0 +1,20 @@
+{
+	"devDependencies": {
+		"daisyui": "^4.11.1",
+		"tailwindcss": "^3.4.3"
+	},
+	"name": "zakaz-3-on-html",
+	"version": "1.0.0",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"dev": "npx tailwindcss -i ./style.css -o ./src/output.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"description": "",
+	"dependencies": {
+		"axios": "^1.6.8",
+		"react-hot-toast": "^2.4.1"
+	}
+}

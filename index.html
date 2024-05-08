@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="./assets/logo.png">
+		<title>English Essay Writing Help</title>
+		<link href="./src/output.css" rel="stylesheet" />
+		<script src="./app.js" defer></script>
+		<script src="./array/PapperPrice.js" defer></script>
+		<script src="./array/Authors.js" defer></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<div
+			class="fixed top-0 z-10 bg-white w-full flex md:justify-around items-center font-Rubik py-4 mx-4 md:mx-0"
+		>
+			<div class="flex items-center gap-2 cursor-pointer">
+				<img src="./assets/logo.png" alt="logo" class="w-14" />
+				<h1 class="text-[#0B132A] font-bold md:text-lg">
+					English Essay Writing Help
+				</h1>
+			</div>
+			<ul class="hidden md:flex items-center gap-6 text-[#4F5665] mr-24">
+				<li>
+					<a href="#" class="hover:text-[#2BC6F6]">About</a>
+				</li>
+				<li>
+					<a href="#" class="hover:text-[#2BC6F6]">Pricing</a>
+				</li>
+				<li>
+					<a href="#" class="hover:text-[#2BC6F6]">Authors</a>
+				</li>
+			</ul>
+			<button
+				class="text-[#2BC6F6] border border-[#2BC6F6] px-6 py-2 rounded-full hidden md:block hover:bg-[#2BC6F6] hover:text-white hover:shadow-lg hover:shadow-[#2BC6F6]" onclick="handleOpenModal()"
+			>
+				Get started
+			</button>
+			<div class="flex md:hidden z-1000 fixed right-2">
+				<img
+					src="./assets/hamburger.png"
+					alt="hamburger"
+					class="w-10"
+					id="hamburger"
+				/>
+			</div>
+		</div>
+
+		<!-- Add Modal HTML if needed -->
+
+		<div id="modal" class="hidden">
+			<div
+				class="fixed z-10 top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50"
+				onclick="handleCloseModal(event)"
+			>
+				<div
+					class="bg-white rounded-lg p-8 md:w-[450px] w-full mx-[20px] md:mx-0"
+				>
+					<h2 class="text-[30px] text-center font-bold mb-4 text-[#0B132A]">
+						Form
+					</h2>
+					<div class="flex flex-col gap-3">
+						<input
+							type="text"
+							name="username"
+							class="input input-info"
+							placeholder="Your name"
+						/>
+						<input
+							type="text"
+							name="Messanger"
+							class="input input-info"
+							placeholder="Messanger..."
+						/>
+					</div>
+					<button
+						class="bg-[#2BC6F6] text-white w-full rounded-[10px] h-[40px] mt-[30px]"
+						onclick="handleSubmit()"
+					>
+						Submit
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Add Mobile Navbar HTML if needed -->
+		<div id="mobile-navbar" class="hidden">
+			<ul
+				class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed"
+			>
+				<img
+					src="./assets/close.png"
+					alt="close"
+					class="w-[40px] fixed right-4 top-5"
+					onclick="handleShowNav()"
+				/>
+				<li>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">
+						Pricing
+					</a>
+				</li>
+				<li>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">
+						Authors
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- / Navbar -->
+
+		<!-- Wrapper -->
+		<div class="max-w-[1120px] mx-auto">
+			<!-- Hero -->
+			<div
+				class="flex flex-col md:flex-row justify-center items-center font-Rubik gap-[40px] mt-[100px]"
+			>
+				<div class="max-w-[520px]">
+					<h1
+						class="text-[#0B132A] text-[40px] text-center md:text-start md:text-[50px] font-bold"
+					>
+						English Essay Writing Help
+					</h1>
+					<p
+						class="text-[#4F5665] mt-[15px] text-center md:text-start mx-[20px] md:mx-0"
+					>
+						Language skills are not only about authentic speaking. Usually
+						students receive a written task like an essay or a letter and so on
+						to prove their knowledge of English in writing.
+					</p>
+					<div class="flex justify-center md:justify-start">
+						<button
+							class="bg-[#2BC6F6] rounded-[10px] w-[200px] md:w-[250px] h-[60px] text-white mt-[37px] transition ease-in hover:shadow-lg hover:shadow-[#2BC6F6]"
+							onclick="handleOpenModal()"
+						>
+							Get started
+						</button>
+					</div>
+				</div>
+				<div>
+					<img src="./assets/hero1.png" alt="hero image" />
+				</div>
+			</div>
+			<!-- Modal -->
+			<div id="modal" class="hidden">
+				<div
+					class="fixed z-10 top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50"
+					onclick="handleCloseModal(event)"
+				>
+					<div
+						class="bg-white rounded-lg p-8 md:w-[450px] w-full mx-[20px] md:mx-0"
+					>
+						<h2 class="text-[30px] text-center font-bold mb-4 text-[#0B132A]">
+							Form
+						</h2>
+						<div class="flex flex-col gap-3">
+							<input
+								type="text"
+								name="username"
+								class="input input-info"
+								placeholder="Your name"
+							/>
+							<input
+								type="text"
+								name="Messanger"
+								class="input input-info"
+								placeholder="Messanger..."
+							/>
+						</div>
+						<button
+							class="bg-[#2BC6F6] text-white w-full rounded-[10px] h-[40px] mt-[30px]"
+							onclick="handleSubmit()"
+						>
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Wrapper -->
+
+		<!-- Wrapper -->
+		<div class="max-w-[1120px] mx-auto">
+			<!-- Subscription -->
+			<div
+				class="flex flex-col gap-[50px] md:flex-row justify-around items-center font-Rubik mt-[100px] md:mt-[150px]"
+			>
+				<div class="flex items-center gap-5">
+					<div class="bg-[#D4FAFF] w-[60px] rounded-[70px] p-3">
+						<img src="./assets/essays.png" alt="essays" class="w-[60px]" />
+					</div>
+					<div>
+						<h2 class="text-[#0B132A] text-[25px] font-bold">260+</h2>
+						<p class="text-[#4F5665] text-[20px]">Essays</p>
+					</div>
+				</div>
+				<img src="./assets/line.svg" alt="line" class="hidden md:block" />
+				<div class="flex items-center gap-5">
+					<div class="bg-[#D4FAFF] w-[60px] rounded-[70px] p-3">
+						<img src="./assets/letters.png" alt="letters" class="w-[60px]" />
+					</div>
+					<div>
+						<h2 class="text-[#0B132A] text-[25px] font-bold">520k</h2>
+						<p class="text-[#4F5665] text-[20px]">Letters</p>
+					</div>
+				</div>
+				<img src="./assets/line.svg" alt="line" class="hidden md:block" />
+				<div class="flex items-center gap-5 ml-[60px] md:ml-0">
+					<div class="bg-[#D4FAFF] w-[60px] rounded-[70px] p-3">
+						<img
+							src="./assets/happyClients.png"
+							alt="happy clients"
+							class="w-[60px]"
+						/>
+					</div>
+					<div>
+						<h2 class="text-[#0B132A] text-[25px] font-bold">100%</h2>
+						<p class="text-[#4F5665] text-[20px]">Happy clients</p>
+					</div>
+				</div>
+			</div>
+			<!-- End Subscription -->
+		</div>
+		<!-- End Wrapper -->
+
+		<!-- Wrapper -->
+		<div class="max-w-[1120px] mx-auto">
+			<!-- Help -->
+			<div
+				class="flex flex-col md:flex-row justify-center items-center font-Rubik gap-[50px] mt-[150px]"
+			>
+				<img
+					src="./assets/help__component.png"
+					alt="help"
+					class="w-[320px] md:w-[420px]"
+				/>
+				<div class="mx-[20px] md:mx-0">
+					<h1
+						class="text-[#0B132A] text-[35px] font-medium text-center md:text-start"
+					>
+						English Essay Writing Help
+					</h1>
+					<p class="text-[#4F5665] mt-[29px] text-center md:text-start">
+						Language skills are not only about authentic speaking. Usually
+						students receive a written task like an essay or a letter and so on
+						to prove their knowledge of English in writing. Let's say everything
+						is fine with your speech but there are some difficulties with paper
+						— what should you do? Our service is going to solve your problem!
+						Visit the website to receive help with the texts that are necessary
+						for your graduation and employment, etc.
+					</p>
+				</div>
+			</div>
+			<!-- End Help -->
+		</div>
+		<!-- End Wrapper -->
+
+		<!-- Wrapper -->
+		<div class="max-w-[1120px] mx-auto">
+			<!-- Help2 -->
+			<div class="font-Rubik mt-[200px]">
+				<div
+					class="flex flex-col items-center justify-center gap-[30px] mx-[20px] md:mx-0"
+				>
+					<h1
+						class="text-[#0B132A] text-[35px] font-normal text-center w-[65%]"
+					>
+						Paper Writing Help — Real Opportunities to Receive Assistance
+					</h1>
+					<img src="./assets/help2__component.png" alt="help" />
+					<p class="text-[#4F5665] text-center">
+						Sometimes it is not enough to find a native English speaker,
+						because, in addition to his consent to do the work for you, it is
+						necessary that he has the special erudition on the topic about which
+						the text will be written. Obviously, not every person from the USA
+						or Great Britain is able to write, for example, a nursing essay in
+						accordance with the high requirements for undergraduates and
+						graduate students. It is great that our service’s authors are
+						professionals in their fields.
+					</p>
+					<img
+						src="./assets/line__blue.png"
+						alt="blue line"
+						class="w-[300px]"
+					/>
+					<p class="text-[#4F5665] text-center">
+						Surely, you can find a lot of identical websites on the Internet but
+						the main question is: How competent are their authors? Before using
+						the services of copywriters and translators, you need to make sure
+						of the quality of their work.
+					</p>
+				</div>
+			</div>
+			<!-- End Help2 -->
+		</div>
+		<!-- End Wrapper -->
+
+		<!-- Wrapper -->
+		<div class="max-w-[1120px] mx-auto">			
+					<!-- PapperPrice -->
+					<div class="font-Rubik mt-[150px]">
+						<div
+							class="flex flex-col justify-center items-center mx-[20px] md:mx-0"
+						>
+							<h1
+								class="text-[#0B132A] text-[35px] font-normal text-center w-[60%]"
+							>
+								Professional Paper Writing at an Affordable Price
+							</h1>
+							<p class="text-[#4F5665] mt-[30px] text-center">
+								It's hard to imagine a psychology essay without an abundance of
+								specific terminology, isn't it? It means that translation
+								requires a special treatment. And there are plenty of such cases
+								when the help of specialists is needed. Our service is ready to
+								help you write a high-quality article that meets the strict
+								requirements of the university. How to make paragraphs in
+								English correctly? What is the best way to prioritize the text?
+								— relax and leave all these questions to professionals in
+								writing such materials. You must admit that it's way better than
+								losing a lot of time constantly redoing your business essay or
+								something else because you have incorrectly drawn up the doc.
+							</p>
+						</div>
+						<div
+							class="flex flex-col md:flex-row justify-center gap-[65px] items-center font-Rubik mt-[75px]"
+						>
+							<div
+								class="flex-container flex items-center justify-center flex-col md:flex-row gap-[40px]"
+							>
+								<!-- Items will be dynamically added here -->
+							</div>
+							<!-- End of mapped items -->
+						</div>
+						<div>
+							<!-- PapperPriceList component HTML -->
+						</div>
+						<p class="text-[#4F5665] mt-[75px] text-center mx-[20px] md:mx-0">
+							The quality of the final result depends on how well your helper
+							understands the topic, how well he is knowledgeable about all the
+							subtleties of writing the text. If he is like a duck to water in
+							this path, then you can hope that you will get excellent material.
+							Nowadays all scientific researches, regardless of large or small
+							volume, become a part of specialized publishing and translation in
+							English is mandatory. Essay writing help timing could not have
+							been better.
+						</p>
+					</div>
+			</div>
+			<!-- End PapperPrice -->
+		</div>
+		<!-- End Wrapper -->
+
+
+		<div class="max-w-[1120px] mx-auto">
+			<div class="font-Rubik mt-[137px] mx-[20px] md:mx-0">
+				<div class="flex flex-col justify-center items-center text-center gap-[20px]">
+					<h1 class="text-[#0B132A] text-[35px] font-normal w-[60%]">
+						Who Are the Authors Who Will Take My Paper for Writing?
+					</h1>
+					<p class="text-[#4F5665]">
+						The authors of our service are thoroughly selected specialists in
+						particular fields meaning that your essay in history will be written
+						by a historian. It is a pretty usual task to write a scientific
+						paper for our authors marked with a degree and experienced
+						copywriters. However, there is another difficulty to manage with —
+						the uniqueness of the article.
+					</p>
+				</div>
+				<div class="mt-[50px]">
+					<div class="flex flex-col md:flex-row justify-center items-center gap-5 authors">
+						
+					</div>
+				</div>
+				<p class="text-[#4F5665] text-16px text-center mt-[80px]">
+					Each submitted material is necessarily checked for plagiarism,
+					however, you can always order the urgent translation and essay in the
+					particular segment of the site. If you want to bring some changes to
+					the article or have several remarks, feel free to report them because
+					our professionals will be happy to make the necessary edits to reach
+					perfection. There are no obstacles on your way to receive support in
+					English paper writing, all you have to do it’s to give it to pure
+					masters.
+				</p>
+			</div>
+		</div>
+
+	 <!-- Get Start -->
+	 <div class="max-w-[1120px] mx-auto">
+        <div class='flex flex-col md:flex-row justify-between items-center font-Rubik font-normal mt-[100px] bg-white shadow-xl p-[50px] rounded-[10px] max-w-[1140px] w-full md:mx-0'>
+            <div class='flex flex-col items-center md:items-start text-center md:text-start'>
+                <h1 class='text-[#0B132A] text-[35px]'>Get started</h1>
+                <p class='text-[#4F5665] text-[16px] mt-[20px]'>Receive your essay quickly and efficiently!</p>
+            </div>
+            <button class='bg-[#2BC6F6] rounded-[10px] w-[200px] md:w-[250px] h-[60px] text-white mt-[37px] transition ease-in hover:shadow-lg hover:shadow-[#2BC6F6]'>Get started</button>
+        </div>
+    </div>
+    <!-- End Get Start -->
+
+
+	<!-- Footer Start -->
+
+	<div class='bg-[#F8F8F8] w-full h-[420px] z-[-1] font-Rubik flex flex-col md:flex-row justify-between items-center mt-[100px]'>
+		<div class='flex-col md:ml-[150px]'>
+			<div class='flex items-center gap-2 cursor-pointer mt-[100px] md:mt-0'>
+				<img src='./assets/logo.png' alt='logo' />
+				<h1 class='text-[#0B132A] text-[20px] font-bold'>English Essay Writing Help</h1>
+			</div>
+			<div class='flex flex-col items-center gap-4 md:mr-[150px] md:hidden mt-[40px]'>
+				<h1 class='text-[#0B132A] font-normal text-[18px]'>Navigation</h1>
+				<ul class='flex flex-col gap-4'>
+					<li class='text-[#4F5665] text-[16px] cursor-pointer'>About</li>
+					<li class='text-[#4F5665] text-[16px] cursor-pointer'>Pricing</li>
+					<li class='text-[#4F5665] text-[16px] cursor-pointer'>Authors</li>
+				</ul>
+			</div>
+			<div class='flex flex-col items-start'>
+				<div class='flex items-center mt-[60px] gap-2'>
+					<img src='./assets/Facebook.png' alt='facebook' class='cursor-pointer' />
+					<img src='./assets/Twitter.png' alt='twitter' class='cursor-pointer' />
+					<img src='./assets/Instagram.png' alt='instagram' class='cursor-pointer' />
+				</div>
+				<p class='text-[#AFB5C0] text-[16px] mt-[10px]'>©2024 English Essay Writing Help</p>
+			</div>
+		</div>
+		<div class='md:flex flex-col items-start gap-4 md:mr-[150px] hidden'>
+			<h1 class='text-[#0B132A] font-normal text-[18px]'>Navigation</h1>
+			<ul class='flex flex-col gap-4'>
+				<li class='text-[#4F5665] text-[16px] cursor-pointer'>About</li>
+				<li class='text-[#4F5665] text-[16px] cursor-pointer'>Pricing</li>
+				<li class='text-[#4F5665] text-[16px] cursor-pointer'>Authors</li>
+			</ul>
+		</div>
+	</div>
+	</body>
+</html>
