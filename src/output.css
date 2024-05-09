@@ -8570,10 +8570,6 @@ html:has(.drawer-open.drawer-open){
   top: 1.25rem;
 }
 
-.top-2{
-  top: 0.5rem;
-}
-
 .isolate{
   isolation: isolate;
 }
@@ -8669,6 +8665,10 @@ html:has(.drawer-open.drawer-open){
   margin-left: 30px;
 }
 
+.ml-\[60px\]{
+  margin-left: 60px;
+}
+
 .mr-24{
   margin-right: 6rem;
 }
@@ -8679,10 +8679,6 @@ html:has(.drawer-open.drawer-open){
 
 .mt-\[100px\]{
   margin-top: 100px;
-}
-
-.mt-\[10px\]{
-  margin-top: 10px;
 }
 
 .mt-\[137px\]{
@@ -8733,20 +8729,12 @@ html:has(.drawer-open.drawer-open){
   margin-top: 57px;
 }
 
-.mt-\[60px\]{
-  margin-top: 60px;
-}
-
 .mt-\[75px\]{
   margin-top: 75px;
 }
 
 .mt-\[80px\]{
   margin-top: 80px;
-}
-
-.ml-\[50px\]{
-  margin-left: 50px;
 }
 
 .box-border{
@@ -8856,10 +8844,6 @@ html:has(.drawer-open.drawer-open){
   height: 40px;
 }
 
-.h-\[420px\]{
-  height: 420px;
-}
-
 .h-\[45px\]{
   height: 45px;
 }
@@ -8884,6 +8868,10 @@ html:has(.drawer-open.drawer-open){
   width: 3.5rem;
 }
 
+.w-\[100\%\]{
+  width: 100%;
+}
+
 .w-\[177px\]{
   width: 177px;
 }
@@ -8902,10 +8890,6 @@ html:has(.drawer-open.drawer-open){
 
 .w-\[40px\]{
   width: 40px;
-}
-
-.w-\[60\%\]{
-  width: 60%;
 }
 
 .w-\[60px\]{
@@ -8929,10 +8913,6 @@ html:has(.drawer-open.drawer-open){
 }
 
 .w-full{
-  width: 100%;
-}
-
-.w-\[100\%\]{
   width: 100%;
 }
 
@@ -10140,10 +10120,6 @@ html:has(.drawer-open.drawer-open){
   padding: 50px;
 }
 
-.p-2{
-  padding: 0.5rem;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -10157,6 +10133,14 @@ html:has(.drawer-open.drawer-open){
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.pb-\[10px\]{
+  padding-bottom: 10px;
+}
+
+.pt-\[50px\]{
+  padding-top: 50px;
 }
 
 .text-left{
@@ -10926,10 +10910,6 @@ input::-webkit-inner-spin-button {
     margin-left: 0px;
   }
 
-  .md\:ml-\[150px\]{
-    margin-left: 150px;
-  }
-
   .md\:mr-\[150px\]{
     margin-right: 150px;
   }
@@ -10994,6 +10974,10 @@ input::-webkit-inner-spin-button {
     text-align: start;
   }
 
+  .md\:text-\[35px\]{
+    font-size: 35px;
+  }
+
   .md\:text-\[50px\]{
     font-size: 50px;
   }
@@ -11001,10 +10985,6 @@ input::-webkit-inner-spin-button {
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-\[35px\]{
-    font-size: 35px;
   }
 }
 

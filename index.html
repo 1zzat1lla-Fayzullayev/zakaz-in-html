@@ -112,7 +112,7 @@
 							onclick="handleSubmit()">
 							Submit
 						</button>
-						<button class="bg-red-500 w-full rounded-[10px] h-[40px] mt-[30px]"
+						<button class="w-full rounded-[10px] h-[40px] mt-[30px]"
 							onclick="handleCloseModal()">Close</button>
 					</div>
 				</div>
@@ -125,7 +125,7 @@
 	<div class="max-w-[1120px] mx-auto">
 		<!-- Subscription -->
 		<div
-			class="flex flex-col gap-[50px] md:flex-row justify-around items-start font-Rubik mt-[100px] md:mt-[150px] ml-[50px]">
+			class="flex flex-col gap-[50px] md:flex-row justify-center md:justify-around items-center font-Rubik mt-[100px] md:mt-[150px]">
 			<div class="flex items-center gap-5">
 				<div class="bg-[#D4FAFF] w-[60px] rounded-[70px] p-3">
 					<img src="./assets/essays.png" alt="essays" class="w-[60px]" />
@@ -146,7 +146,7 @@
 				</div>
 			</div>
 			<img src="./assets/line.svg" alt="line" class="hidden md:block" />
-			<div class="flex items-center gap-5  md:ml-0">
+			<div class="flex items-center gap-5 ml-[60px] md:ml-0">
 				<div class="bg-[#D4FAFF] w-[60px] rounded-[70px] p-3">
 					<img src="./assets/happyClients.png" alt="happy clients" class="w-[60px]" />
 				</div>
@@ -315,15 +315,18 @@
 
 
 	<!-- Footer Start -->
-
+	
 	<div
-		class='bg-[#F8F8F8] w-full h-[420px] z-[-1] font-Rubik flex flex-col md:flex-row justify-between items-center mt-[100px]'>
-		<div class='flex-col md:ml-[150px]'>
+	class='bg-[#F8F8F8] w-full h-full z-[-1] font-Rubik flex flex-col md:flex-row justify-between items-center mt-[100px] pt-[50px]'>
+	<div class="max-w-[1120px] mx-auto">
+		<div class='flex-col '>
+			<div class="flex flex-col md:flex-row items-center justify-between">
+
 			<div class='flex items-center gap-2 cursor-pointer mt-[100px] md:mt-0'>
 				<img src='./assets/logo.png' alt='logo' />
 				<h2 class='text-[#0B132A] text-[20px] font-bold'>English Essay Writing Help</h2>
 			</div>
-			<div class='flex flex-col items-center gap-4 md:mr-[150px] md:hidden mt-[40px]'>
+			<div class='flex flex-col items-center md:items-start gap-4 mt-[40px]'>
 				<h2 class='text-[#0B132A] font-normal text-[18px]'>Navigation</h2>
 				<ul class='flex flex-col gap-4'>
 					<li class='text-[#4F5665] text-[16px] cursor-pointer'>About</li>
@@ -331,24 +334,30 @@
 					<li class='text-[#4F5665] text-[16px] cursor-pointer'>Authors</li>
 				</ul>
 			</div>
-			<div class='flex flex-col items-start'>
-				<div class='flex items-center mt-[60px] gap-2'>
-					<img src='./assets/Facebook.png' alt='facebook' class='cursor-pointer' />
-					<img src='./assets/Twitter.png' alt='twitter' class='cursor-pointer' />
-					<img src='./assets/Instagram.png' alt='instagram' class='cursor-pointer' />
+		</div>
+
+			<div class='flex flex-col items-start mt-[40px]'>
+				<div class="flex flex-col md:flex-row items-center justify-between gap-2">
+					<p class='text-[#AFB5C0] text-[16px]'>©2024 English Essay Writing Help</p>
+					<img src="./assets/card.png" alt="card">
+					<div class='flex items-center gap-2'>
+						<img src='./assets/Facebook.png' alt='facebook' class='cursor-pointer' />
+						<img src='./assets/Twitter.png' alt='twitter' class='cursor-pointer' />
+						<img src='./assets/Instagram.png' alt='instagram' class='cursor-pointer' />
+					</div>
 				</div>
-				<p class='text-[#AFB5C0] text-[16px] mt-[10px]'>©2024 English Essay Writing Help</p>
 			</div>
 		</div>
-		<div class='md:flex flex-col items-start gap-4 md:mr-[150px] hidden'>
+		<!-- <div class='md:flex flex-col items-start gap-4 md:mr-[150px] hidden'>
 			<h2 class='text-[#0B132A] font-normal text-[18px]'>Navigation</h2>
 			<ul class='flex flex-col gap-4'>
 				<li class='text-[#4F5665] text-[16px] cursor-pointer'>About</li>
 				<li class='text-[#4F5665] text-[16px] cursor-pointer'>Pricing</li>
 				<li class='text-[#4F5665] text-[16px] cursor-pointer'>Authors</li>
 			</ul>
-		</div>
+		</div> -->
 	</div>
+</div>
 
 
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
