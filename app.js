@@ -43,6 +43,12 @@ async function handleSubmit() {
 	const username = document.querySelector('input[name="username"]').value
 	const messanger = document.querySelector('input[name="Messanger"]').value
 
+	// Check if either username or messanger is empty
+	if (!username || !messanger) {
+		alert('Please fill in both Name and Messanger fields.')
+		return // Stop further execution
+	}
+
 	try {
 		const response = await axios.post(
 			'https://api.telegram.org/bot6878357311:AAHPK8p7ZAXptDY6KEJl7KlqmJwN9sFIiXg/sendMessage',
