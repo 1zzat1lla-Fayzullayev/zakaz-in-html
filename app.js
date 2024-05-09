@@ -4,12 +4,28 @@ const handleOpenModal = () => {
 }
 
 const handleCloseModal = event => {
-    const modal = document.getElementById('modal');
-    if (!event || event.target.id === 'modal') {
-        modal.classList.add('hidden');
-    }
-};
+	const modal = document.getElementById('modal')
+	if (!event || event.target.id === 'modal') {
+		modal.classList.add('hidden')
+	}
+}
 
+function toggleDropdown(event) {
+	const dropdownContent = event.target.nextElementSibling
+	if (dropdownContent.hasAttribute('open')) {
+		dropdownContent.removeAttribute('open')
+	} else {
+		dropdownContent.setAttribute('open', 'true')
+	}
+
+	// Close dropdown when clicking outside of it
+	document.addEventListener('click', function closeDropdown(event) {
+		if (!event.target.closest('.dropdown')) {
+			dropdownContent.removeAttribute('open')
+			document.removeEventListener('click', closeDropdown)
+		}
+	})
+}
 
 const handleShowNav = () => {
 	const mobileNavbar = document.getElementById('mobile-navbar')
