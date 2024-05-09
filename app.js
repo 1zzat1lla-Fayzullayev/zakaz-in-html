@@ -45,7 +45,14 @@ async function handleSubmit() {
 
 	// Check if either username or messanger is empty
 	if (!username || !messanger) {
-		alert('Please fill in both Name and Messanger fields.')
+		Swal.fire({
+			position: 'top',
+			icon: 'error',
+			title: 'Please fill in both Name and Messanger fields.',
+			showConfirmButton: false,
+			timer: 1500,
+		})
+
 		return // Stop further execution
 	}
 
@@ -58,9 +65,21 @@ async function handleSubmit() {
 			}
 		)
 		if (response.status === 200) {
-			alert('Message sent successfully!')
+			Swal.fire({
+				position: 'top',
+				icon: 'success',
+				title: 'Successfully submitted',
+				showConfirmButton: false,
+				timer: 1500,
+			})
 		} else {
-			alert('Failed to send message. Please try again later.')
+			Swal.fire({
+				position: 'top',
+				icon: 'error',
+				title: 'Failed to send message. Please try again later.',
+				showConfirmButton: false,
+				timer: 1500,
+			})
 		}
 		handleCloseModal({ target: { classList: ['bg-gray-900'] } })
 	} catch (error) {
