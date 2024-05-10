@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guarantees</title>
+	<link rel="icon" href="../assets/logo.png">
+	<link href="../src/output.css" rel="stylesheet" />
+	<link rel="stylesheet" href="sweetalert2.min.css">
+	<script src="../app.js" defer></script>
+	<script src="../array/PapperPrice.js" defer></script>
+	<script src="../array/Authors.js" defer></script>
+</head>
+
+<body>
+	<div class="fixed top-0 z-10 bg-white w-full flex md:justify-around items-center font-Rubik py-4">
+		<div class="flex items-center gap-2 cursor-pointer">
+			<img src="../assets/logo.png" alt="logo" class="w-14" />
+			<a href="../index.html" class="text-[#0B132A] font-bold md:text-lg">
+				English Essay Writing Help
+			</a>
+
+		</div>
+		<ul class="hidden md:flex items-center gap-6 text-[#4F5665] mr-24" id="home">
+			<details class="dropdown" onclick="toggleDropdown(event)">
+				<summary class="m-1 cursor-pointer">Services</summary>
+				<ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+					<li><a>Guarantees</a></li>
+					<li><a>Term</a></li>
+				</ul>
+			</details>
+			</li>
+			<li>
+				<a href="#about" class="hover:text-[#2BC6F6]">About</a>
+			</li>
+			<li>
+				<a href="#pricing" class="hover:text-[#2BC6F6]">Pricing</a>
+			</li>
+			<li>
+				<a href="#authors" class="hover:text-[#2BC6F6]">Authors</a>
+			</li>
+		</ul>
+		<button
+			class="text-[#2BC6F6] border border-[#2BC6F6] px-6 py-2 rounded-full hidden md:block hover:bg-[#2BC6F6] hover:text-white hover:shadow-lg hover:shadow-[#2BC6F6]"
+			onclick="handleOpenModal()">
+			Order Now
+		</button>
+		<div class="flex md:hidden z-1000 fixed right-2">
+			<img src="../assets/hamburger.png" alt="hamburger" class="w-10" id="hamburger" />
+		</div>
+	</div>
+
+	<!-- Add Mobile Navbar HTML if needed -->
+	<div id="mobile-navbar" class="hidden">
+		<ul
+			class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed">
+			<img src="../assets/close.png" alt="close" class="w-[40px] fixed right-4 top-5" id="close"
+				onclick="handleCloseNav()" />
+			<li>
+				<a href="#" class="transition ease-in hover:text-[#2BC6F6]">About</a>
+			</li>
+			<li>
+				<a href="#" class="transition ease-in hover:text-[#2BC6F6]">Pricing</a>
+			</li>
+			<li>
+				<a href="#" class="transition ease-in hover:text-[#2BC6F6]">Authors</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- Hero start -->
+
+	<div class="max-w-[1120px] mx-auto">
+		<div class="flex flex-col md:flex-row justify-center items-center mt-[150px]">
+			<div class="flex flex-col gap-5 text-center md:text-start">
+				<h2 class="text-[#0B132A] font-bold text-[35px]">Guarantees</h2>
+				<p class="text-[#4F5665] md:w-[60%] w-full">Being our most important value, you get a number of
+					guarantees to help you feel safe and secure while
+					using Write My Essays service. Each guarantee we offer is supported by our real actions and legal
+					policies that we strictly follow throughout the whole process of cooperation.</p>
+				<p class="text-[#4F5665]">
+					With us, you can be completely sure that:
+				</p>
+			</div>
+			<img src="../assets/gaurantee.png" alt="404" class="w-[250px] md:w-[300px]">
+		</div>
+	</div>
+
+	<!-- Hero end -->
+
+	<!-- Descreption start -->
+
+	<div class="max-w-[1120px] mx-auto">
+
+		<div class="flex flex-col mt-[150px]">
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A] text-center md:text-start">Your order will be
+							always done only for you</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 text-center md:text-start">
+						<p>Our writers realize how crucial originality is for each student, so they complete every new
+							order exceptionally from scratch. Your specific order instructions are all that matters for
+							the writing process, the rest is the responsibility of the writer. The completed materials
+							are always scanned through our unique plagiarism system that doesn’t store files in an
+							online database, keeping them original after each scan.</p>
+						<p>We can also use Turnitin if you ask us to. We use it in a safe and secure manner, meaning
+							that your paper will be checked but not stored in a database. So, if someone scans it for
+							the second time, it will be plagiarism-free.
+
+						</p>
+						<p>You may get proof of originality upon request. Our Plagiarism report extra helps us show you
+							the detailed analysis of the paper with the percentage of an acceptable plagiarism level if
+							any. Such a report may go with any paper if added to the order.
+
+						</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">Your writer will follow all your order
+							instructions
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>While completing each paper from scratch, your writer will follow all order requirements.
+							Taking into account all of your requests at once will minimize the need for a revision and
+							save time for both you and the writer.</p>
+						<p>Upon your request, our experienced writers can format your paper in MLA, APA, Chicago, and
+							other formatting styles, plus provide examples, make a wise conclusion and support it with
+							arguments in case your order requires so. Every single detail is important.
+						</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">Your paper will be of the quality you expect
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>For over 3 years we’ve worked with various types of customers, including foreigners, natives,
+							and immensely scrupulous students. Our experience shows that each client comes with personal
+							expectations, be it a paper done in simple language or one written with the use of a rich
+							English vocabulary.</p>
+						<p>Do you have any expectations? Whatever they might be, we have various types of writers to
+							meet all of them. You can decide on the level of your writer and hire the best one out of
+							our Advanced or TOP ones. Their experience from 3 to 6 years of writing guarantees the best
+							possible result.
+						</p>
+						<p>What if your friend studies the same class and has the same assignment? No worries, the
+							papers will never be identical. Each of you will be assigned different writers, so be sure
+							that the works will differ.
+						</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">Your writer will follow all your order
+							instructions
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>While completing each paper from scratch, your writer will follow all order requirements.
+							Taking into account all of your requests at once will minimize the need for a revision and
+							save time for both you and the writer.</p>
+						<p>Upon your request, our experienced writers can format your paper in MLA, APA, Chicago, and
+							other formatting styles, plus provide examples, make a wise conclusion and support it with
+							arguments in case your order requires so. Every single detail is important.
+						</p>
+
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">Your personal and payment information is perfectly secured
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>Being on the market for over 7 years, we’ve tried a lot of tools and strategies, which showed us how to make our service the most reliable for you.</p>
+						<p>Any information about your personality remains a secret and you may ask to remove it at any time. No one ever will know it. Even your writer can only see the ID number you get right after your personal account is created.</p>
+						<p>With us, your payment is secure as well because we cooperate only with the most reliable official payment systems, such as Gate2Shop, Avangate, and BlueSnap. We do not require showing us your payment card details, etc.</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">You have 3 revisions at no cost
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>The first draft of your paper doesn’t mean the final one. According to our Revision policy,
+							you can ask for up to 3 revision at no cost, with all your comments included. Such practice
+							helps us guarantee you the highest quality of each work.</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">You will get your paper promptly
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>To get started on your order, the writer needs to be sure that you have uploaded all your instructions. If you promised to upload additional files later, do this before or right after you make the payment. The deadline starts from the moment we receive the payment.</p>
+						<p>Even though our writers always do our best to meet your deadline, we ask you to make sure there are no delays from your end.</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">You will get a super-convenient service
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>Our clients say that it is comfortable to work with us. Our managers pick up the phone within seconds and reply in chats with the speed of light. With a growing number of clients, we do our best to keep the same level of reliability and quickness.</p>
+						<p>But we want to go beyond all expectations of a convenient service and guarantee you this with our VIP Service extra. With it, you get the personal assistance of our manager who cares about your requests as the most important things on his list. You can track your order notifications without the need to log in your personal account just because you’ll get each of them to your smartphone with SMS. Plus, you’ll feel how cool it is to be our “important” and “only”.</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+			<div class="flex flex-col">
+				<div class="flex flex-col md:flex-row text-center md:text-start justify-center gap-10">
+					<div class="md:w-[50%] w-full">
+						<h2 class="text-[30px] font-bold text-[#0B132A]">You get legit help. Always
+						</h2>
+					</div>
+					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5">
+						<p>Asking for writing help at the service like ours is not a crime. We encourage students and youth all over the world spend their lives for doing the things that make them feel happy and help this world be a better place to live in. In the future, each of us will regret the time wasted on the things that have never been interesting to us. This is the reason why our service exists and have all legal grounds for that.</p>
+					</div>
+				</div>
+				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Descreption end -->
+
+
+	<!-- Footer Start -->
+
+	<div
+		class='bg-[#F8F8F8] w-full h-full z-[-1] font-Rubik flex flex-col md:flex-row justify-between items-center mt-[100px] pt-[50px]'>
+		<div class="max-w-[1120px] mx-auto">
+			<div class='flex-col '>
+				<div class="flex flex-col md:flex-row items-center justify-between">
+
+					<div class='flex items-center gap-2 cursor-pointer mt-[100px] md:mt-0'>
+						<img src='../assets/logo.png' alt='logo' />
+						<h2 class='text-[#0B132A] text-[20px] font-bold'>English Essay Writing Help</h2>
+					</div>
+					<div class='flex flex-col items-center md:items-start gap-4 mt-[40px]'>
+						<h2 class='text-[#0B132A] font-normal text-[18px]'>Navigation</h2>
+						<ul class='flex flex-col gap-4'>
+							<li class='text-[#4F5665] text-[16px] cursor-pointer'>About</li>
+							<li class='text-[#4F5665] text-[16px] cursor-pointer'>Pricing</li>
+							<li class='text-[#4F5665] text-[16px] cursor-pointer'>Authors</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class='flex flex-col items-start mt-[40px]'>
+					<div class="flex flex-col md:flex-row items-center justify-between gap-2">
+						<p class='text-[#AFB5C0] text-[16px]'>©2024 English Essay Writing Help</p>
+						<img src="../assets/card.png" alt="card">
+						<div class='flex items-center gap-2'>
+							<img src='../assets/Facebook.png' alt='facebook' class='cursor-pointer' />
+							<img src='../assets/Twitter.png' alt='twitter' class='cursor-pointer' />
+							<img src='../assets/Instagram.png' alt='instagram' class='cursor-pointer' />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
