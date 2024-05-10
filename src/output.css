@@ -8846,29 +8846,14 @@ html:has(.drawer-open.drawer-open){
   margin-right: auto;
 }
 
-.my-\[\]{
-  margin-top: ;
-  margin-bottom: ;
-}
-
-.my-\[100px\]{
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.my-\[10px\]{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.my-\[30px\]{
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .my-\[40px\]{
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.mx-\[10px\]{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .mb-4{
@@ -8955,12 +8940,8 @@ html:has(.drawer-open.drawer-open){
   margin-top: 80px;
 }
 
-.mt-\[\]{
-  margin-top: ;
-}
-
-.mt-\[400px\]{
-  margin-top: 400px;
+.ml-\[20px\]{
+  margin-left: 20px;
 }
 
 .box-border{
@@ -9110,6 +9091,10 @@ html:has(.drawer-open.drawer-open){
   width: 200px;
 }
 
+.w-\[250px\]{
+  width: 250px;
+}
+
 .w-\[300px\]{
   width: 300px;
 }
@@ -9120,10 +9105,6 @@ html:has(.drawer-open.drawer-open){
 
 .w-\[40px\]{
   width: 40px;
-}
-
-.w-\[41\%\]{
-  width: 41%;
 }
 
 .w-\[60px\]{
@@ -9148,58 +9129,6 @@ html:has(.drawer-open.drawer-open){
 
 .w-full{
   width: 100%;
-}
-
-.w-\[30\%\]{
-  width: 30%;
-}
-
-.w-\[20\%\]{
-  width: 20%;
-}
-
-.w-\[40\%\]{
-  width: 40%;
-}
-
-.w-\[50\%\]{
-  width: 50%;
-}
-
-.w-\[60\%\]{
-  width: 60%;
-}
-
-.w-\[\]{
-  width: ;
-}
-
-.w-\[70\%\]{
-  width: 70%;
-}
-
-.w-\[80\%\]{
-  width: 80%;
-}
-
-.w-\[77\%\]{
-  width: 77%;
-}
-
-.w-\[79\%\]{
-  width: 79%;
-}
-
-.w-\[78\%\]{
-  width: 78%;
-}
-
-.w-\[250px\]{
-  width: 250px;
-}
-
-.w-\[120\%\]{
-  width: 120%;
 }
 
 .max-w-\[1120px\]{
@@ -9740,6 +9669,10 @@ html:has(.drawer-open.drawer-open){
   justify-items: stretch;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
 .gap-2{
   gap: 0.5rem;
 }
@@ -9778,10 +9711,6 @@ html:has(.drawer-open.drawer-open){
 
 .gap-\[65px\]{
   gap: 65px;
-}
-
-.gap-10{
-  gap: 2.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -10442,6 +10371,21 @@ html:has(.drawer-open.drawer-open){
   padding-bottom: 1rem;
 }
 
+.px-\[10px\]{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.px-\[20px\]{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-\[15px\]{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .pt-\[50px\]{
   padding-top: 50px;
 }
@@ -10646,14 +10590,6 @@ html:has(.drawer-open.drawer-open){
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\]{
-  color: ;
-}
-
-.text-\[2\]{
-  color: 2;
 }
 
 .underline{
@@ -11221,10 +11157,6 @@ input::-webkit-inner-spin-button {
     margin-left: 0px;
   }
 
-  .md\:mr-\[150px\]{
-    margin-right: 150px;
-  }
-
   .md\:mt-0{
     margin-top: 0px;
   }
@@ -11249,6 +11181,10 @@ input::-webkit-inner-spin-button {
     width: 250px;
   }
 
+  .md\:w-\[300px\]{
+    width: 300px;
+  }
+
   .md\:w-\[400px\]{
     width: 400px;
   }
@@ -11261,32 +11197,16 @@ input::-webkit-inner-spin-button {
     width: 450px;
   }
 
+  .md\:w-\[50\%\]{
+    width: 50%;
+  }
+
   .md\:w-\[60\%\]{
     width: 60%;
   }
 
-  .md\:w-full{
-    width: 100%;
-  }
-
-  .md\:w-\[300px\]{
-    width: 300px;
-  }
-
-  .md\:w-\[70\%\]{
-    width: 70%;
-  }
-
   .md\:w-\[80\%\]{
     width: 80%;
-  }
-
-  .md\:w-\[\]{
-    width: ;
-  }
-
-  .md\:w-\[50\%\]{
-    width: 50%;
   }
 
   .md\:flex-row{
@@ -11303,6 +11223,11 @@ input::-webkit-inner-spin-button {
 
   .md\:justify-around{
     justify-content: space-around;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .md\:text-start{
