@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	authors.forEach((author, index) => {
 		const authorCard = `
-            <div class="transition ease-in border-[2px] border-[#DDD] hover:border-[#79BFFF] rounded-[10px] md:w-[400px] w-full h-[230px]">
+            <div class="transition ease-in border-[2px] border-[#DDD] hover:border-[#79BFFF] rounded-[10px] md:w-[400px] w-full">
                 <div class="mt-[30px] ml-[30px]">
                     <div class="flex items-center gap-[20px]">
                         <img src="${author.img}" alt="user" />
