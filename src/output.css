@@ -8958,6 +8958,10 @@ html:has(.drawer-open.drawer-open){
   margin-top: ;
 }
 
+.mb-\[40px\]{
+  margin-bottom: 40px;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -11283,6 +11287,10 @@ input::-webkit-inner-spin-button {
 
   .md\:mt-\[40px\]{
     margin-top: 40px;
+  }
+
+  .md\:mb-0{
+    margin-bottom: 0px;
   }
 
   .md\:block{
