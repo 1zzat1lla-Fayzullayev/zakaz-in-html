@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About</title>
+		<link rel="icon" href="../assets/logo.png" />
+		<link href="../src/output.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="stylesheet" href="sweetalert2.min.css" />
+		<script src="../app.js" defer></script>
+	</head>
+	<body>
+		<div class="fixed top-0 z-10 bg-white w-full flex md:justify-around items-center font-Rubik py-4 ">
+			<div class="flex items-center gap-2 cursor-pointer">
+				<img src="../assets/logo.png" alt="logo" class="w-14" />
+				<a href="../index.html" class="text-[#0B132A] font-bold md:text-lg">
+					English Essay Writing Help
+				</a>
+	
+			</div>
+			<ul class="hidden md:flex items-center gap-6 text-[#4F5665] mr-24" id="home">
+				<details class="dropdown" onclick="toggleDropdown(event)">
+					<summary class="m-1 cursor-pointer">Services</summary>
+					<ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+						<li><a>Guarantees</a></li>
+						<li><a>Term</a></li>
+					</ul>
+				</details>
+				</li>
+				<li>
+					<a href="#about" class="hover:text-[#2BC6F6]">About</a>
+				</li>
+				<li>
+					<a href="#pricing" class="hover:text-[#2BC6F6]">Pricing</a>
+				</li>
+				<li>
+					<a href="#authors" class="hover:text-[#2BC6F6]">Authors</a>
+				</li>
+			</ul>
+			<button
+				class="text-[#2BC6F6] border border-[#2BC6F6] px-6 py-2 rounded-full hidden md:block hover:bg-[#2BC6F6] hover:text-white hover:shadow-lg hover:shadow-[#2BC6F6]"
+				onclick="handleOpenModal()">
+				Order Now
+			</button>
+			<div class="flex md:hidden z-1000 fixed right-2">
+				<img src="../assets/hamburger.png" alt="hamburger" class="w-10" id="hamburger" />
+			</div>
+		</div>
+	
+		<!-- Add Mobile Navbar HTML if needed -->
+		<div id="mobile-navbar" class="hidden">
+			<ul
+				class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed">
+				<img src="../assets/close.png" alt="close" class="w-[40px] fixed right-4 top-5" id="close"
+					onclick="handleCloseNav()" />
+				<li>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">About</a>
+				</li>
+				<li>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">Pricing</a>
+				</li>
+				<li>
+					<a href="#" class="transition ease-in hover:text-[#2BC6F6]">Authors</a>
+				</li>
+			</ul>
+		</div>
+	
+		<div class="max-w-[1120px] mx-auto">
+
+		<div
+			class="flex flex-col md:flex-row justify-center items-center font-Rubik gap-[50px] mt-[150px]"
+		>
+			<img
+				src="../assets/help__component.png"
+				alt="help"
+				class="w-[320px] md:w-[420px]"
+			/>
+			<div class="flex flex-col gap-5">
+
+			<div class="mx-[20px] md:mx-0 flex flex-col gap-3">
+				<h1
+					class="text-[#0B132A] text-[30px] md:text-[35px] font-medium text-center md:text-start"
+				>
+					English Essay Writing Help
+				</h1>
+				<img src="../assets/line__blue.png" alt="">
+				<p class="text-[#4F5665] text-center md:text-start">
+					Language skills are not only about authentic speaking. Usually
+					students receive a written task like an essay or a letter and so on to
+					prove their knowledge of English in writing. Let's say everything is
+					fine with your speech but there are some difficulties with paper —
+					what should you do? Our service is going to solve your problem! Visit
+					the website to receive help with the texts that are necessary for your
+					graduation and employment, etc.
+				</p>
+			</div>
+			<div class="mx-[20px] md:mx-0 flex flex-col gap-3">
+				<h1
+					class="text-[#0B132A] text-[30px] md:text-[35px] font-medium text-center md:text-start"
+				>
+					English Essay Writing Help
+				</h1>
+				<img src="../assets/line__blue.png" alt="">
+				<p class="text-[#4F5665] text-center md:text-start">
+					Language skills are not only about authentic speaking. Usually
+					students receive a written task like an essay or a letter and so on to
+					prove their knowledge of English in writing. Let's say everything is
+					fine with your speech but there are some difficulties with paper —
+					what should you do? Our service is going to solve your problem! Visit
+					the website to receive help with the texts that are necessary for your
+					graduation and employment, etc.
+				</p>
+			</div>
+		</div>
+
+		</div>
+	</div>
+
+		<div
+        class='bg-[#F8F8F8] w-full h-full z-[-1] font-Rubik flex flex-col md:flex-row justify-between items-center mt-[100px] pt-[50px]'>
+        <div class="max-w-[1120px] mx-auto">
+            <div class='flex-col '>
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div class='flex items-center gap-2 cursor-pointer mt-[100px] md:mt-0'>
+                        <img src='../assets/logo.png' alt='logo' />
+                        <h2 class='text-[#0B132A] text-[20px] font-bold'>English Essay Writing Help</h2>
+                    </div>
+                    <div class='flex flex-col items-center md:items-start gap-4 mt-[40px]'>
+                        <h2 class='text-[#0B132A] font-normal text-[18px]'>Navigation</h2>
+                        <ul class='flex flex-col gap-4'>
+                            <li class='text-[#4F5665] text-[16px] cursor-pointer'>About</li>
+                            <li class='text-[#4F5665] text-[16px] cursor-pointer'>Pricing</li>
+                            <li class='text-[#4F5665] text-[16px] cursor-pointer'>Authors</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class='flex flex-col items-start mt-[40px]'>
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-2">
+                        <p class='text-[#AFB5C0] text-[16px]'>©2024 English Essay Writing Help</p>
+                        <img src="../assets/card.png" alt="card">
+                        <div class='flex items-center gap-2'>
+                            <img src='../assets/Facebook.png' alt='facebook' class='cursor-pointer' />
+                            <img src='../assets/Twitter.png' alt='twitter' class='cursor-pointer' />
+                            <img src='../assets/Instagram.png' alt='instagram' class='cursor-pointer' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	</body>
+</html>
