@@ -26,7 +26,7 @@
         }
 
         .term-content {
-            text-align: center;
+          
             color: white;
         }
     </style>
@@ -60,7 +60,9 @@
                 <a href="#authors" class="hover:text-[#2BC6F6]">Authors</a>
             </li>
         </ul>
-        <button class="text-[#2BC6F6] border border-[#2BC6F6] px-6 py-2 rounded-full hidden md:block hover:bg-[#2BC6F6] hover:text-white hover:shadow-lg hover:shadow-[#2BC6F6]" onclick="handleOpenModal()">
+        <button
+            class="text-[#2BC6F6] border border-[#2BC6F6] px-6 py-2 rounded-full hidden md:block hover:bg-[#2BC6F6] hover:text-white hover:shadow-lg hover:shadow-[#2BC6F6]"
+            onclick="handleOpenModal()">
             Order Now
         </button>
         <div class="flex md:hidden z-1000 fixed right-2">
@@ -70,8 +72,10 @@
 
     <!-- Add Mobile Navbar HTML if needed -->
     <div id="mobile-navbar" class="hidden">
-        <ul class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed">
-            <img src="../assets/close.png" alt="close" class="w-[40px] fixed right-4 top-5" id="close" onclick="handleCloseNav()" />
+        <ul
+            class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed">
+            <img src="../assets/close.png" alt="close" class="w-[40px] fixed right-4 top-5" id="close"
+                onclick="handleCloseNav()" />
             <li>
                 <a href="#" class="transition ease-in hover:text-[#2BC6F6]">About</a>
             </li>
@@ -86,137 +90,212 @@
 
     <!-- Hero Start -->
     <div class="term">
+        <div class="max-w-[1120px] mx-auto">
         <div class="term-content flex flex-col gap-2">
-            <h2 class="text-[40px] font-bold">HIGH-QUALITY TERM PAPERS WRITTEN FOR YOU</h2>
-            <h4 class="text-[30px] font-semibold">Fast and affordable term paper writing service.</h4>
-            <p>Secure top grades with the highest-quality term papers, written according to your instructions.</p>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="text-center md:text-start mt-[50px]">
+                    <h2 class="text-[30px] md:text-[40px] font-bold">HIGH-QUALITY TERM PAPERS WRITTEN FOR YOU</h2>
+                    <h4 class="text-[20px] md:text-[30px] font-semibold">Fast and affordable term paper writing service.</h4>
+                    <p>Secure top grades with the highest-quality term papers, written according to your instructions.
+                    </p>
+                </div>
+                <div class="bg-white w-[90%] md:w-[450px] rounded-[10px] mt-[40px]">
+                   <h2 class="text-[#0B132A] text-center text-[25px] font-bold my-[25px]">Calculate the price</h2>
+                   <div class="flex justify-center items-center flex-col gap-4">
+                       <select class="select text-black border border-[#4F5665] w-[90%]">
+                           <option>High School</option>
+                           <option>Undergraduete</option>
+                           <option>Bachelor</option>
+                           <option>Master</option>
+                           <option>Ph.D</option>
+                        </select>
+                       <select class="select text-black border border-[#4F5665] w-[90%]">
+                           <option>3 hours</option>
+                           <option>6 hours</option>
+                           <option>12 hours</option>
+                           <option>24 hours</option>
+                           <option>2 days</option>
+                           <option>3 days</option>
+                           <option>4 days</option>
+                           <option>5 days</option>
+                           <option>7 days</option>
+                           <option>10 days</option>
+                           <option>14 days</option>
+                        </select>
+                        <div class="flex justify-center items-center text-[#4F5665] w-full gap-2">
+                            <button class="btn text-[black] text-[20px] border border-[#4F5665]">+</button>
+                            <div class="border border-[#4F5665] px-[25px] py-[10px] rounded-[6px]">1 page / 275 words</div>
+                            <button class="btn text-[black] text-[20px] border border-[#4F5665]">-</button>
+                        </div>
+                        <button class="btn text-[#0B132A] text-center text-[17px] w-[90%] hover:bg-[#2BC6F6] border-[2px] border-[#2BC6F6] hover:border-[#2BC6F6] hover:text-white font-bold mt-[20px] mb-[20px]">Write my essay</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
     <!-- Hero End -->
 
-	<!-- Main Start -->
+    <!-- Main Start -->
 
-	<div class="max-w-[1120px] mx-auto">
-		<div class="flex flex-col mt-[150px]">
-			<div class="flex flex-col">
-				<div class="flex flex-col justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A] text-center md:text-start">Write My Term Paper
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 text-center md:text-start px-[15px] md:px-0">
-						<p>You want to do well in your course, don’t you? Every serious student wants. However, most undergraduates get lost when it comes to preparing a term paper. As a term paper is usually a significant part of the final grade, you need to write a decent work. If you are faced with the task for the first time and don’t know what to start from, consider getting help from Write My Essays. Our online writing service is aimed at providing professional academic assistance when students start asking “Who can do my term paper?”</p>
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
+    <div class="max-w-[1120px] mx-auto">
+        <div class="flex flex-col mt-[150px]">
+            <div class="flex flex-col">
+                <div class="flex flex-col justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A] text-center md:text-start">Write My Term Paper
+                        </h2>
+                    </div>
+                    <div
+                        class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 text-center md:text-start px-[15px] md:px-0">
+                        <p>You want to do well in your course, don’t you? Every serious student wants. However, most
+                            undergraduates get lost when it comes to preparing a term paper. As a term paper is usually
+                            a significant part of the final grade, you need to write a decent work. If you are faced
+                            with the task for the first time and don’t know what to start from, consider getting help
+                            from Write My Essays. Our online writing service is aimed at providing professional academic
+                            assistance when students start asking “Who can do my term paper?”</p>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
 
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">Why Ask Us “Write My Term Paper for Me”
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>There are several reasons why students choose Write My Essays among other online services. We’ll gladly share this information to help you make the right choice when looking for the term paper help.</p>
-						
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">Completing the work on time
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>You’ll always meet the deadlines with Write My Essays. Our goal is to help you succeed, and we know that it is impossible without timely assistance. When you place the order with us, you may be 100% confident that the work will be finished till the specified deadline or even earlier.</p>
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">Formatting your paper properly
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>If you expect to receive a good grade for your term paper, it should be formatted in the right way. Our writers know all the formatting standards and basic requirements, so they will organize your work accordingly. They will make your term paper something your professor will want to read.</p>
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">Following your guidelines
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>Our writers will listen to all your recommendations and suggestions. They will follow the instructions to improve your chances of receiving an excellent grade. When preparing such a serious work as a term paper, it is important to follow the rules. And you may be sure that we know what your instructor expects to receive.</p>
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">Original papers only
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>Our online writing service prepares unique assignments. Plagiarism is a serious issue that can impact the student’s academic career. We thoroughly check all the papers we write with the help of plagiarism detection software. Therefore, you may be sure that your term paper will be written especially for you.</p>
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">We are available 24/7
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>You can turn to our writing service at any time of the day or night and get help at once. We will find a suitable writer for your assignment who will start working at it without a delay. If you have any questions, you can contact our support team managers. They are ready to help round-the-clock.</p>
-						<p>These 5 reasons prove that we take our work seriously. Write My Essays is a company you can trust. We do our best to provide the highest quality of service to meet your needs when you ask, “Can you write my term paper?”</p>
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class=" w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">Place Your Order and Get Help in 3 Hours
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>You need to spend just a few minutes to complete our order form. All you have to do is to specify the details, such as a topic, deadline, number of pages, etc., include special requirements, and make payments. We’ll take care of everything else. You can relax and spend time at your disposal – our writers will cope with the task.</p>
-						<p>Minimal deadlines start at 3 hours. If you need your work to be completed urgently, tell us and we’ll write it for you. We are here to help you with all the challenges you may face during the process of writing. That’s why when you ask, “Will you write a term paper for me?” we answer “With a great pleasure!”</p>
-					</div>
-				</div>
-				<img src="../assets/line__blue.png" alt="404" class="my-[40px]">
-			</div>
-			<div class="flex flex-col">
-				<div class="flex flex-col text-center md:text-start justify-center gap-10">
-					<div class="w-full">
-						<h2 class="text-[30px] font-bold text-[#0B132A]">You get legit help. Always
-						</h2>
-					</div>
-					<div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
-						<p>Asking for writing help at the service like ours is not a crime. We encourage students and youth all over the world spend their lives for doing the things that make them feel happy and help this world be a better place to live in. In the future, each of us will regret the time wasted on the things that have never been interesting to us. This is the reason why our service exists and have all legal grounds for that.</p>
-					</div>
-				</div>
-			</div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">Why Ask Us “Write My Term Paper for Me”
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>There are several reasons why students choose Write My Essays among other online services.
+                            We’ll gladly share this information to help you make the right choice when looking for the
+                            term paper help.</p>
 
-		</div>
-	</div>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">Completing the work on time
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>You’ll always meet the deadlines with Write My Essays. Our goal is to help you succeed, and
+                            we know that it is impossible without timely assistance. When you place the order with us,
+                            you may be 100% confident that the work will be finished till the specified deadline or even
+                            earlier.</p>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">Formatting your paper properly
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>If you expect to receive a good grade for your term paper, it should be formatted in the
+                            right way. Our writers know all the formatting standards and basic requirements, so they
+                            will organize your work accordingly. They will make your term paper something your professor
+                            will want to read.</p>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">Following your guidelines
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>Our writers will listen to all your recommendations and suggestions. They will follow the
+                            instructions to improve your chances of receiving an excellent grade. When preparing such a
+                            serious work as a term paper, it is important to follow the rules. And you may be sure that
+                            we know what your instructor expects to receive.</p>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">Original papers only
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>Our online writing service prepares unique assignments. Plagiarism is a serious issue that
+                            can impact the student’s academic career. We thoroughly check all the papers we write with
+                            the help of plagiarism detection software. Therefore, you may be sure that your term paper
+                            will be written especially for you.</p>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">We are available 24/7
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>You can turn to our writing service at any time of the day or night and get help at once. We
+                            will find a suitable writer for your assignment who will start working at it without a
+                            delay. If you have any questions, you can contact our support team managers. They are ready
+                            to help round-the-clock.</p>
+                        <p>These 5 reasons prove that we take our work seriously. Write My Essays is a company you can
+                            trust. We do our best to provide the highest quality of service to meet your needs when you
+                            ask, “Can you write my term paper?”</p>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class=" w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">Place Your Order and Get Help in 3 Hours
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>You need to spend just a few minutes to complete our order form. All you have to do is to
+                            specify the details, such as a topic, deadline, number of pages, etc., include special
+                            requirements, and make payments. We’ll take care of everything else. You can relax and spend
+                            time at your disposal – our writers will cope with the task.</p>
+                        <p>Minimal deadlines start at 3 hours. If you need your work to be completed urgently, tell us
+                            and we’ll write it for you. We are here to help you with all the challenges you may face
+                            during the process of writing. That’s why when you ask, “Will you write a term paper for
+                            me?” we answer “With a great pleasure!”</p>
+                    </div>
+                </div>
+                <img src="../assets/line__blue.png" alt="404" class="my-[40px]">
+            </div>
+            <div class="flex flex-col">
+                <div class="flex flex-col text-center md:text-start justify-center gap-10">
+                    <div class="w-full">
+                        <h2 class="text-[30px] font-bold text-[#0B132A]">You get legit help. Always
+                        </h2>
+                    </div>
+                    <div class="w-full text-[#4F5665] md:w-[80%] flex flex-col gap-5 px-[15px] md:px-0">
+                        <p>Asking for writing help at the service like ours is not a crime. We encourage students and
+                            youth all over the world spend their lives for doing the things that make them feel happy
+                            and help this world be a better place to live in. In the future, each of us will regret the
+                            time wasted on the things that have never been interesting to us. This is the reason why our
+                            service exists and have all legal grounds for that.</p>
+                    </div>
+                </div>
+            </div>
 
-	<!-- Main End -->
+        </div>
+    </div>
+
+    <!-- Main End -->
 
     <!-- Footer Start -->
-    <div class='bg-[#F8F8F8] w-full h-full z-[-1] font-Rubik flex flex-col md:flex-row justify-between items-center mt-[100px] pt-[50px]'>
+    <div
+        class='bg-[#F8F8F8] w-full h-full z-[-1] font-Rubik flex flex-col md:flex-row justify-between items-center mt-[100px] pt-[50px]'>
         <div class="max-w-[1120px] mx-auto">
             <div class='flex-col '>
                 <div class="flex flex-col md:flex-row items-center justify-between">
