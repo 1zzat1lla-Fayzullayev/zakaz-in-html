@@ -11281,6 +11281,10 @@ input::-webkit-inner-spin-button {
     margin-top: 150px;
   }
 
+  .md\:mt-\[40px\]{
+    margin-top: 40px;
+  }
+
   .md\:block{
     display: block;
   }
