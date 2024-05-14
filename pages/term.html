@@ -45,19 +45,19 @@
             <details class="dropdown" onclick="toggleDropdown(event)">
                 <summary class="m-1 cursor-pointer">Services</summary>
                 <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                    <li><a>Guarantees</a></li>
+                    <li><a href="../pages/guarantees.html">Guarantees</a></li>
                     <li><a>Term</a></li>
                 </ul>
             </details>
             </li>
             <li>
-                <a href="#about" class="hover:text-[#2BC6F6]">About</a>
+                <a href="../index.html" class="hover:text-[#2BC6F6]">About</a>
             </li>
             <li>
-                <a href="#pricing" class="hover:text-[#2BC6F6]">Pricing</a>
+                <a href="../index.html" class="hover:text-[#2BC6F6]">Pricing</a>
             </li>
             <li>
-                <a href="#authors" class="hover:text-[#2BC6F6]">Authors</a>
+                <a href="../index.html" class="hover:text-[#2BC6F6]">Authors</a>
             </li>
         </ul>
         <button
@@ -74,20 +74,31 @@
     <div id="mobile-navbar" class="hidden">
         <ul
             class="flex flex-col justify-center items-center gap-[30px] text-[#4F5665] top-0 left-0 right-0 bottom-0 m-auto bg-white z-[90] fixed">
+            <details class="dropdown" onclick="toggleDropdown(event)">
+                <summary class="m-1 cursor-pointer">Services</summary>
+                <ul class="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                  <li><a href="../pages/guarantees.html" target="_blank">Guarantees</a></li>
+                  <li><a href="#" target="_blank">Term</a></li>
+                </ul>
+              </details>
             <img src="../assets/close.png" alt="close" class="w-[40px] fixed right-4 top-5" id="close"
                 onclick="handleCloseNav()" />
             <li>
-                <a href="#" class="transition ease-in hover:text-[#2BC6F6]">About</a>
+                <a href="../pages/about.html" class="transition ease-in hover:text-[#2BC6F6]">About</a>
             </li>
             <li>
-                <a href="#" class="transition ease-in hover:text-[#2BC6F6]">Pricing</a>
+                <a href="../index.html" class="transition ease-in hover:text-[#2BC6F6]">Pricing</a>
             </li>
             <li>
-                <a href="#" class="transition ease-in hover:text-[#2BC6F6]">Authors</a>
+                <a href="../index.html" class="transition ease-in hover:text-[#2BC6F6]">Authors</a>
             </li>
+            <button
+            class="text-[#2BC6F6] border border-[#2BC6F6] px-6 py-2 rounded-full  hover:bg-[#2BC6F6] hover:text-white hover:shadow-lg hover:shadow-[#2BC6F6]"
+            onclick="handleOpenModal()">
+            Order Now
+        </button>
         </ul>
     </div>
-
     <!-- Hero Start -->
     <div class="term">
         <div class="max-w-[1120px] mx-auto">
